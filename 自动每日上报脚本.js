@@ -22,9 +22,9 @@
                     break;
                 }
             }
-            spons = document.getElementsByTagName("div");
+            spons = document.getElementsByClassName("wapcf-btn wapcf-btn-ok");
             for (i = 0; i < spons.length; i++) {
-                if (spons[i].innerText.indexOf("确认") != -1&& spons[i].childElementCount==0) {
+                if (spons[i].innerText.indexOf("确认") != -1 && spons[i].innerText.indexOf("Submit") != -1) {
                     console.log(spons[i]);
                     spons[i].click();
                     break;
